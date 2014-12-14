@@ -37,6 +37,15 @@ You can assign this role in a rails console like this
  User.find(SomeNumber).add_role(:admin)
 ```
 
+## Testing
+
+create and seed the database of the dummy app
+```ruby
+  rake db:drop
+  rake db:setup
+```
+
+
 ## Contributing
 
 1. Fork it ( https://github.com/[my-github-username]/rolify_ui/fork )

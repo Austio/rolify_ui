@@ -1,3 +1,0 @@
-class RoleAssigner
-
-end
