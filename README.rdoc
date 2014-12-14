@@ -1,3 +1,46 @@
-= RolifyUi
+# RolifyUi
 
-This project rocks and uses MIT-LICENSE.
+Rolify is a minimalist rails plugin that adds an incredibly easy admin interface to the gem rolify.
+
+The interface is allows you to assign Local or Global roles to any object in the system.
+
+For instance:
+  assign role admin to a user
+  assign role account_manager to a user
+  assign role account_manager on a specific organization to a user
+
+You business logic is then able to take care of what those roles are allowed to do.  I generally use the gem Pundit for that but have also used CanCan (or it's sibling CanCanCan).
+
+
+## Installation
+
+Add this line to your application's Gemfile:
+
+```ruby
+gem 'rolify_ui'
+```
+
+And then execute:
+
+    $ bundle
+
+Or install it yourself as:
+
+    $ gem install rolify_ui
+
+## Usage
+
+Access the UI from the URI /admin/roles.  It redirects to :back unless there is a current_user session AND that user has the role :admin globally.
+
+You can assign this role in a rails console like this
+```ruby
+ User.find(SomeNumber).add_role(:admin)
+```
+
+## Contributing
+
+1. Fork it ( https://github.com/[my-github-username]/rolify_ui/fork )
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create a new Pull Request
