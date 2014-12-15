@@ -1,6 +1,6 @@
 module RolifyUi
   class KlassGetter
-    def initialize(klass)
+    def initialize(klass = "User")
       @klass = klass.constantize
     end
 

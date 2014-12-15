@@ -1,1 +1,4 @@
 
+<% @rolified_objects.all.each do |klass| %>
+  <%= "#{klass.to_s} - #{klass.roles}"%>
+<% end %>

@@ -1,3 +1,4 @@
 RolifyUi::Engine.routes.draw do
-  get '/' => "rolified_classes#index"
+  root "dashboard#index"
+  resources :rolified_classes, only: [:index, :show]
 end
