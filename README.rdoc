@@ -2,7 +2,7 @@
 
 Rolify is a minimalist rails plugin that adds an incredibly easy admin interface to the gem rolify.
 
-The interface is allows you to assign Local or Global roles to any object in the system.
+The gem gives you a route where you can see all of your rolified objects in a dashboard, click into them and then assign them Local or Global roles to any object in the system.
 
 For instance:
   assign role admin to a user
@@ -11,6 +11,7 @@ For instance:
 
 You business logic is then able to take care of what those roles are allowed to do.  I generally use the gem Pundit for that but have also used CanCan (or it's sibling CanCanCan).
 
+Although technically, this plugin will display any models that implement the 'has_role?' instance method, it is best to look at it as it will only work with the gem rolified.
 
 ## Installation
 

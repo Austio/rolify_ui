@@ -8,6 +8,11 @@
 </head>
 <body>
 
+<% rolified_classes.classes.each do |klass| %>
+    <%=link_to_rolified_class(klass) %>
+<% end %>
+
+
 <%= yield %>
 
 </body>

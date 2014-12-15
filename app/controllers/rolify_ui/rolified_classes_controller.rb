@@ -5,5 +5,10 @@ module RolifyUi
     def index
       @rolified = RolifyUi::Rolified.new
     end
+
+    def show
+      #TODO add @rolified as global so we can check that this is a good rolified model
+      @klasses = RolifyUi::KlassGetter(params[:klass]).new
+    end
   end
 end
