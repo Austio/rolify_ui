@@ -4,7 +4,7 @@ module RolifyUi
   class RoleAssignerTest < ActiveSupport::TestCase
     test "initializes with" do
       u = User.create
-      r = RolifyUi::RoleAssigner.new(u, :admin)
+      r = RolifyUi::RoleAssigner.new(u, :rolified_classes)
 
       assert_equal true, r
     end

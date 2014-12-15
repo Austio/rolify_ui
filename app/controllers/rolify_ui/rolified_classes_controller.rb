@@ -1,9 +1,9 @@
 require_dependency "rolify_ui/application_controller"
 
 module RolifyUi
-  class AdminController < ApplicationController
+  class RolifiedClassesController < ApplicationController
     def index
-      @users = RolifyUi::Rolified.new
+      @rolified = RolifyUi::Rolified.new
     end
   end
 end

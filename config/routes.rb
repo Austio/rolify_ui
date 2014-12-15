@@ -1,3 +1,3 @@
 RolifyUi::Engine.routes.draw do
-  get '/' => "admin#index"
+  get '/' => "rolified_classes#index"
 end
