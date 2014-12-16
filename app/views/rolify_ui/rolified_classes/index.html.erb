@@ -1,4 +1,4 @@
 
-<% @rolified_objects.all.each do |klass| %>
-  <%= "#{klass.to_s} - #{klass.roles}"%>
+<% @rolified_objects.all.each do |rolified_object| %>
+  <%= render partial: 'rolified_object', object: rolified_object %>
 <% end %>
