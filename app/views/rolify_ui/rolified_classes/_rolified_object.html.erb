@@ -1,4 +1,6 @@
 
-    <%= "#{rolified_object.inspect} - #{rolified_object.roles.inspect}"%>
-    </br>
-    </br>
+<%= "Rolified Object: #{object_human_name rolified_object} - "%> </br>
+<%= render partial: 'roles', collection: rolified_object.roles, as: :roles, locals: {:set => 'GLOBALS'} %> </br>
+<%= "INSTANCE:" %>
+</br>
+</br>
