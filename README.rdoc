@@ -38,6 +38,21 @@ You can assign this role in a rails console like this
  User.find(SomeNumber).add_role(:admin)
 ```
 
+When viewing roles or objects that have roles assigned to them.  RolifyUI will attempt to guess the proper way to label the object that is being displayed.
+
+For instance when viewing an Organization with a name of "Widget Company", RolifyUI would display that.
+
+Because the relationship with Roify is polymorphic, we could be displaying any type of object that can be modeled.  To get around this RolifyUI will guess what the display label is.
+
+Here is the order, to specify the display name just define an instance method on the object called 'rolified_name'.
+
+'''ruby
+1. rolified_name
+2. name
+3. email
+4. id
+'''
+
 ## Testing
 
 create and seed the database of the dummy app
