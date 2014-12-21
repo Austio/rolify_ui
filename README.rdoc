@@ -42,16 +42,13 @@ When viewing roles or objects that have roles assigned to them.  RolifyUI will a
 
 For instance when viewing an Organization with a name of "Widget Company", RolifyUI would display that.
 
-Because the relationship with Roify is polymorphic, we could be displaying any type of object that can be modeled.  To get around this RolifyUI will guess what the display label is.
+Because the relationship with Roify is polymorphic, we could be displaying any type of object that can be modeled.  To get around this RolifyUI will guess what the display label is in the order below. To explicitly declare how it should be displayed, d    efine an instance method on the object called 'rolified_name'.
 
-Here is the order, to specify the display name just define an instance method on the object called 'rolified_name'.
-
-'''ruby
 1. rolified_name
 2. name
 3. email
 4. id
-'''
+
 
 ## Testing
 
@@ -69,3 +66,6 @@ create and seed the database of the dummy app
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
+
+
+http://foundation.zurb.com/templates4/workspace.html

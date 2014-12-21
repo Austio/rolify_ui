@@ -1,0 +1,28 @@
+
+<div class="row large-12 columns">
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="#">RolifyUI</a>
+        </h1>
+      </li>
+      <li class="toggle-topbar menu-icon">
+        <a href="#">
+          <span>menu</span>
+        </a>
+      </li>
+    </ul>
+
+    <section class="top-bar-section">
+      <ul class="left">
+        <% rolified_classes.classes.each do |klass| %>
+            <li><%=link_to_rolified_class(klass) %></li>
+        <% end %>
+      </ul>
+    </section>
+
+
+  </nav>
+
+</div>

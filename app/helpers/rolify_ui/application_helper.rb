@@ -21,12 +21,13 @@ module RolifyUi
     end
 
     def display_global_role(role)
-      role_content = content_tag(:p, role.name)
+      role_content = content_tag(:p, rolified_object_name(role))
       content_tag(:div, role_content, class: "global_role")
     end
 
     def display_instance_role(role)
-      'Instance'+ role.name + '-' + role.resource.inspect
+      role_content = content_tag(:p, "#{rolified_object_name(role)} - #{rolified_object_name(role.resource)}")
+      content_tag(:div, role_content, class: "instance_role")
     end
 
     def link_to_rolified_class(klass)
