@@ -4,6 +4,5 @@ module RolifyUi
       link_to klass.name, "/admin/roles/rolified_classes?klass=#{klass.name}", :class => 'search-link'
     end
 
-
   end
 end

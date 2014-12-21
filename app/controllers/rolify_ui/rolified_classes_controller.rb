@@ -8,7 +8,6 @@ module RolifyUi
 
     def show
       #TODO add @rolified as global so we can check that this is a good rolified model
-
     end
   end
 end
