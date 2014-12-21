@@ -1,3 +1,6 @@
-
-<%= "#{rolified_object_name rolified_object} - "%>
-  <%= render partial: 'role', collection: rolified_object.roles, as: :role %> </br>
+<div class="large-12 columns">
+  <div class="row panel radius">
+    <h4><%= "#{rolified_object_name rolified_object} - "%></h4>
+    <%= render partial: 'role', collection: rolified_object.roles, as: :role %> </br>
+  </div>
+</div>

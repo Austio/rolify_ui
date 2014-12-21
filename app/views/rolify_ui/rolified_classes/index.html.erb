@@ -1,4 +1,6 @@
 
 <% @rolified_objects.all.each do |rolified_object| %>
-  <%= render partial: 'rolified_object', object: rolified_object %>
+  <div class="row">
+    <%= render partial: 'rolified_object', object: rolified_object %>
+  </div>
 <% end %>
